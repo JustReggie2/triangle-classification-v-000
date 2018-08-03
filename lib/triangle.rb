@@ -16,7 +16,7 @@ class Triangle
     if trutriangle != self
       binding.pry
         raise TriangleError
-      
+
     else
       if @length_1 == @length_2 && @length_2 == @length_3
         :equilateral.inspect
