@@ -14,8 +14,9 @@ class Triangle
 
   def kind
     if trutriangle != self
+      binding.pry
         raise TriangleError
-        binding.pry
+      
     else
       if @length_1 == @length_2 && @length_2 == @length_3
         :equilateral.inspect
