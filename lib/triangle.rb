@@ -13,6 +13,7 @@ class Triangle
        @length_2 + @length_3 > @length_1
        @length_1 + @length_3 > @length_2
        @length_1.positive? && @length_2.positive? && @length_3.positive?
+    end
   end
 
   def kind
