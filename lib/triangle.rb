@@ -1,3 +1,4 @@
+require 'pry'
 class Triangle
   # attr_accessor :length_1, :length_2, :length_3
 
@@ -19,6 +20,7 @@ class Triangle
       else
         :scalene.inspect
       end
+      binding.pry
     end
   end
 
