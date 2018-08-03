@@ -14,7 +14,7 @@ class Triangle
   end
 
   def kind
-    if self.new != trutriangle
+    if trutriangle != Triangle
         raise TriangleError
     else
       if @length_1 == (@length_2 && @length_3)
