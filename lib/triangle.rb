@@ -14,7 +14,7 @@ class Triangle
 
   def kind
     if self.trutriangle == false
-      #binding.pry
+      binding.pry
         raise TriangleError
 
     else
