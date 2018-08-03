@@ -12,8 +12,8 @@ class Triangle
 
   def kind
     trutriangle = @length_1 + @length_2 > @length_3
-binding.pry
-    if self.class != trutriangle
+
+    if self != trutriangle
         raise TriangleError
     else
       if @length_1 == (@length_2 && @length_3)
