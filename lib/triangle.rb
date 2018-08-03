@@ -1,9 +1,9 @@
 require 'pry'
 class Triangle
-  # attr_accessor :length_1, :length_2, :length_3
+  attr_accessor :length_1, :length_2, :length_3
 
   def inititalize(length_1, length_2, length_3)
-binding.pry
+
     @length_1 = length_1
     @length_2 = length_2
     @length_3 = length_3
