@@ -9,11 +9,11 @@ class Triangle
   end
 #binding.pry
   def trutriangle
-    if @length_1 + @length_2 > @length_3
-       @length_2 + @length_3 > @length_1
-       @length_1 + @length_3 > @length_2
-       @length_1.positive? && @length_2.positive? && @length_3.positive?
-    end
+     @length_1 + @length_2 > @length_3
+     @length_2 + @length_3 > @length_1
+     @length_1 + @length_3 > @length_2
+     @length_1.positive? && @length_2.positive? && @length_3.positive?
+    
   end
 
   def kind
