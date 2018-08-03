@@ -1,19 +1,15 @@
 require 'pry'
 class Triangle
-  attr_accessor :length_1, :length_2, :length_3
+  attr_accessor :l1, :l2, :l3
 
-  def initialize(length_1, length_2, length_3)
-    @length_1 = length_1
-    @length_2 = length_2
-    @length_3 = length_3
+  def initialize(l1, l2, l3)
+    @l1 = l1
+    @l2 = l2
+    @l3 = l3
   end
 #binding.pry
   def trutriangle
-     @length_1 + @length_2 > @length_3
-     @length_2 + @length_3 > @length_1
-     @length_1 + @length_3 > @length_2
-     @length_1.positive? && @length_2.positive? && @length_3.positive?
-
+     (@l1 + @l2 > @l3 && @l2 + @l3 > @l1 && @l1 + @l3 > @l2) && (@l1.positive? && @l2.positive? && @l3.positive?)
   end
 
   def kind
@@ -22,9 +18,9 @@ class Triangle
         raise TriangleError
 
     else
-      if @length_1 == @length_2 && @length_2 == @length_3
+      if @l1 == @l2 && @l2 == @l3
         :equilateral
-      elsif @length_1 == @length_2 || @length_2 == @length_3 || @length_1 == @length_3
+      elsif @l1 == @l2 || @l2 == @l3 || @l1 == @l3
         :isosceles
       else
         :scalene
